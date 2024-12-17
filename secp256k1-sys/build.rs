@@ -16,6 +16,7 @@ use std::env;
 fn main() {
     // Actual build
     let mut base_config = cc::Build::new();
+
     base_config.include("depend/secp256k1/")
                .include("depend/secp256k1/include")
                .include("depend/secp256k1/src")
