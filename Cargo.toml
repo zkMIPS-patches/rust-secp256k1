@@ -60,6 +60,7 @@ unexpected_cfgs = { level = "deny", check-cfg = ['cfg(bench)', 'cfg(secp256k1_fu
 
 [target.'cfg(all(target_os = "zkvm"))'.dependencies]
 zkm-ecdsa = { git = "https://github.com/zkMIPS-patches/signatures", branch = "patch-ecdsa-0.16.9", package = "ecdsa", features = ["verifying", "alloc"] }
+k256 = { version = "0.13.4", features = ["ecdsa"] }
 
 [[example]]
 name = "sign_verify_recovery"
